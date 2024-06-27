@@ -29,14 +29,14 @@ class HotelDAL
 
     public function insert(Hotel $hotel)
     {
-        $stmt = $this->db->prepare("INSERT INTO hotels (nome, endereco, cidade, estado, telefone, email) VALUES (?, ?, ?, ?, ?, ?)");
-        return $stmt->execute([$hotel->nome, $hotel->endereco, $hotel->cidade, $hotel->estado, $hotel->telefone, $hotel->email]);
+        $stmt = $this->db->prepare("INSERT INTO hotels (nome) VALUES (?)");
+        return $stmt->execute([$hotel->getNome()]);
     }
 
     public function update(Hotel $hotel)
     {
-        $stmt = $this->db->prepare("UPDATE hotels SET nome = ?, endereco = ?, cidade = ?, estado = ?, telefone = ?, email = ? WHERE id = ?");
-        return $stmt->execute([$hotel->nome, $hotel->endereco, $hotel->cidade, $hotel->estado, $hotel->telefone, $hotel->email, $hotel->id]);
+        $stmt = $this->db->prepare("UPDATE hotels SET nome = ? WHERE id = ?");
+        return $stmt->execute([$hotel->getNome(), $hotel->getId()]);
     }
 
     public function delete($id)
@@ -45,3 +45,4 @@ class HotelDAL
         return $stmt->execute([$id]);
     }
 }
+?>

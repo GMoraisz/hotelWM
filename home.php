@@ -49,7 +49,7 @@
                             <p class="text-muted">Porto Seguro/BA</p>
                             <p class="card-text">Hotel próximo de várias lindas praias, com várias atrações turísticas e comidas típicas
                                 da região da Bahia.</p>
-                            <a href="./indisp.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
+                            <a href="./California.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                             <p class="text-muted">Ilhéus/BA</p>
                             <p class="card-text">Se você procura um hotel totalmente luxuoso e tecnologico, esse daqui é
                                 o ideial para você e sua família.</p>
-                            <a href="./available.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
+                            <a href="./Paris.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                         <div class="card-body p-3">
                             <h5 class="card-title mb-1">Hotel Resplendor</h5>
                             <p class="text-muted">Vitória/ES</p>
-                            <a href="./indisp.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
+                            <a href="./Resplendor.php" class="btn btn-orange rounded-0 w-100">Verificar disponibilidade</a>
                         </div>
                     </div>
                 </div>

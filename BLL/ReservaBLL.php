@@ -50,7 +50,7 @@ class ReservaBLL
     private function validateReserva(Reserva $reserva)
     {
         // Validações simples como exemplo
-        if (empty($reserva->hotel_id) || empty($reserva->cliente_id) || empty($reserva->data_checkin) || empty($reserva->data_checkout)) {
+        if (empty($reserva->idhotel) || empty($reserva->status)) {
             return false;
         }
         return true;

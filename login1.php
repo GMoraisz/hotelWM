@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        // Incluir o arquivo de processamento aqui
+                     
                         include 'validação/login.php';
                     }
                     ?>

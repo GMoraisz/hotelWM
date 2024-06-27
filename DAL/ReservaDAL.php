@@ -29,14 +29,14 @@ class ReservaDAL
 
     public function insert(Reserva $reserva)
     {
-        $stmt = $this->db->prepare("INSERT INTO reservas (hotel_id, cliente_id, data_checkin, data_checkout) VALUES (?, ?, ?, ?)");
-        return $stmt->execute([$reserva->hotel_id, $reserva->cliente_id, $reserva->data_checkin, $reserva->data_checkout]);
+        $stmt = $this->db->prepare("INSERT INTO reservas (hotel_id) VALUES (?)");
+        return $stmt->execute([$reserva->getHotelId()]);
     }
 
     public function update(Reserva $reserva)
     {
-        $stmt = $this->db->prepare("UPDATE reservas SET hotel_id = ?, cliente_id = ?, data_checkin = ?, data_checkout = ? WHERE id = ?");
-        return $stmt->execute([$reserva->hotel_id, $reserva->cliente_id, $reserva->data_checkin, $reserva->data_checkout, $reserva->id]);
+        $stmt = $this->db->prepare("UPDATE reservas SET hotel_id = ? WHERE id = ?");
+        return $stmt->execute([$reserva->getHotelId(), $reserva->getId()]);
     }
 
     public function delete($id)
@@ -45,3 +45,4 @@ class ReservaDAL
         return $stmt->execute([$id]);
     }
 }
+?>
