@@ -23,7 +23,7 @@
                     ?>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="w-100 pb-2 pb-4">
-                            <h3 class="fs-2 mb-0 fw-bold mb-1">Hotel WM</h3>
+                            <h3 class="fs-2 mb-0 fw-bold mb-1">Cadastre-se aqui</h3>
                             <span class="text-muted color-orange">Cadastre-se agora no melhor site de hotéis do Brasil</span>
                         </div>
                         <div class="mb-4">
@@ -39,7 +39,7 @@
                             <label class="form-check-label" for="lembrar">Lembre-me</label>
                         </div>
                         <div class="w-100 pt-0 pb-2">
-                            <button type="submit" class="btn btn-login pe-5 ps-5 rounded-0 w-100">Login</button>
+                            <button type="submit" class="btn btn-login pe-5 ps-5 rounded-0 w-100">Cadastrar</button>
                         </div>
                     </form>
                 </div>
